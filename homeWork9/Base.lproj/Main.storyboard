@@ -71,7 +71,7 @@
         <!--List View Controller-->
         <scene sceneID="Rcx-e3-lXd">
             <objects>
-                <viewController storyboardIdentifier="listViewController" id="aeT-0t-pi6" customClass="listViewController" customModule="homeWork9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="listViewController" id="aeT-0t-pi6" customClass="ListViewController" customModule="homeWork9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="82j-en-aMe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,9 +82,6 @@
                                 <state key="normal" title="დადასტურება">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="donebutton:" destination="aeT-0t-pi6" eventType="touchUpInside" id="xKj-UL-LRC"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="გააკეთეთ არჩევანი" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwg-24-iL0">
                                 <rect key="frame" x="50" y="94" width="314" height="32.5"/>
@@ -137,7 +134,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirm" destination="DYO-PM-FJw" id="Gv0-YQ-jqW"/>
+                        <outlet property="confirm" destination="DYO-PM-FJw" id="qbB-nt-Hqp"/>
+                        <outlet property="titleLabel" destination="uwg-24-iL0" id="lSX-YQ-FlX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVG-Ov-akD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

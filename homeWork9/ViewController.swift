@@ -24,13 +24,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func votebutton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "listViewController")as!listViewController
+        let vc = storyboard?.instantiateViewController(identifier: "listViewController")as!ListViewController
         vc.voteDelegate = self
         present(vc, animated: true, completion: nil)
     }
 }
 
-extension ViewController: listDelegate{
+extension ViewController: ListDelegate{
     func didTapChoice(image: UIImage, name: String, color: UIColor) {
         logoimage.image = image
         mainLabel.text = name
